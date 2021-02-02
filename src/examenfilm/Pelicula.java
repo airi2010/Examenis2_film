@@ -7,17 +7,17 @@ public class Pelicula {
     private String actores;
     private String genero;
     private double calificacion;
-    private String duración;
+    private String duracion;
     private String imagen;
 
-    public Pelicula(String Titulo, int year, String director, String actores, String genero, double calificacion, String duración, String imagen) {
+    public Pelicula(String Titulo, int year, String director, String actores, String genero, double calificacion, String duracion, String imagen) {
         this.Titulo = Titulo;
         this.year = year;
         this.director = director;
         this.actores = actores;
         this.genero = genero;
         this.calificacion = calificacion;
-        this.duración = duración;
+        this.duracion = duracion;
         this.imagen = imagen;
     }
     
@@ -34,6 +34,6 @@ public class Pelicula {
         return calificacion;
     }
     public String getFilm(){
-        return "";
+        return imagen+" : "+Titulo+" "+year+" "+director+" "+genero+" "+calificacion+" "+duracion+" "+actores;
     }
 }

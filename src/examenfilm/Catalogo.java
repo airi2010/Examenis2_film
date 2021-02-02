@@ -10,7 +10,11 @@ public class Catalogo {
         this.pelimap=pelimap;
     }
     
-    
+    public HashMap<Integer,Pelicula> orderbygenero(){
+        HashMap<Integer,Pelicula> mapgenero=new HashMap<>();
+        
+        return mapgenero;
+    }
     
     
     
