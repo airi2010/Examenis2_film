@@ -10,12 +10,8 @@ public class ExamenFilm {
         pelimap=new Get_film().get();
         Catalogo catalog=new Catalogo(pelimap);
         MockFilmdisplay mockdis=new MockFilmdisplay();
+        mockdis.displayMenu();
         
-        System.out.println("Catálogo de películas");
-        System.out.println("Elija Como las quiere ver:");
-        System.out.println("1º Sin Orden");
-        System.out.println("2º Por Año");
-        System.out.println("3º Por Género");
         Scanner scanner = new Scanner(System.in);
         
         int data=0;
@@ -26,7 +22,17 @@ public class ExamenFilm {
                 mockdis.display(peli.getFilm());
             }
         }else if(data==2){
+            for(Pelicula peli: catalog.orderbyYear().values()){
+                mockdis.display(peli.getFilm());
+            }
         }else if(data==3){
+            for(Pelicula peli: catalog.orderbyGenero().values()){
+                mockdis.display(peli.getFilm());
+            }
+        }else if(data==4){
+            for(Pelicula peli: catalog.orderbycalificacion().values()){
+                mockdis.display(peli.getFilm());
+            }
         }else{
             System.out.println("Ese número no está en las opciones");
         }

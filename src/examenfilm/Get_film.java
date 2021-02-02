@@ -20,6 +20,7 @@ public class Get_film {
                 pelimap.put(pelimap.size(),peli);
             }
         }catch (Exception e){
+            System.out.println(e);
         }
     
         
