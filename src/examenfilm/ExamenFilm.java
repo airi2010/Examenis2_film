@@ -41,6 +41,8 @@ public class ExamenFilm {
             for(Pelicula peli: catalog.orderbyviews().values()){
                 mockdis.display(peli.getFilm());
             }
+        }else if(data==6){
+            System.exit(0);
         }else{
             System.out.println("Ese número no está en las opciones");
         }

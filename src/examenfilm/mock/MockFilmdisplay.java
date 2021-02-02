@@ -14,6 +14,7 @@ public class MockFilmdisplay {
         System.out.println("2º Novedades");
         System.out.println("3º Por Género");
         System.out.println("4º Por calificación");
-        System.out.println("4º Las más vistas");
+        System.out.println("5º Las más vistas");
+        System.out.println("6º Salir");
     }
 }
