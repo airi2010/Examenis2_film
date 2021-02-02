@@ -1,6 +1,10 @@
 
 package examenfilm;
 
+import examenfilm.model.Catalogo;
+import examenfilm.control.Get_film;
+import examenfilm.mock.MockFilmdisplay;
+import examenfilm.model.Pelicula;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -31,6 +35,10 @@ public class ExamenFilm {
             }
         }else if(data==4){
             for(Pelicula peli: catalog.orderbycalificacion().values()){
+                mockdis.display(peli.getFilm());
+            }
+        }else if(data==5){
+            for(Pelicula peli: catalog.orderbyviews().values()){
                 mockdis.display(peli.getFilm());
             }
         }else{

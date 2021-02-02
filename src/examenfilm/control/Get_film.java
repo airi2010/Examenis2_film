@@ -1,6 +1,7 @@
 
-package examenfilm;
+package examenfilm.control;
 
+import examenfilm.model.Pelicula;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -16,7 +17,7 @@ public class Get_film {
             String line;
             while((line=br.readLine())!=null){
                 String[] temp= line.split(":");
-                Pelicula peli=new Pelicula(temp[0],Integer.parseInt(temp[1]),temp[2],temp[3],temp[4],Integer.parseInt(temp[5]),temp[6],temp[7]);
+                Pelicula peli=new Pelicula(temp[0],Integer.parseInt(temp[1]),temp[2],temp[3],temp[4],Integer.parseInt(temp[5]),temp[6],temp[7],Integer.parseInt(temp[8]));
                 pelimap.put(pelimap.size(),peli);
             }
         }catch (Exception e){

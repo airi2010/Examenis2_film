@@ -1,5 +1,5 @@
 
-package examenfilm;
+package examenfilm.mock;
 
 public class MockFilmdisplay {
     
@@ -7,12 +7,13 @@ public class MockFilmdisplay {
         System.out.println(value);
     }
 
-    void displayMenu() {
+    public void displayMenu() {
         System.out.println("Catálogo de películas");
         System.out.println("Elija Como las quiere ver:");
         System.out.println("1º Sin Orden");
-        System.out.println("2º Por Año");
+        System.out.println("2º Novedades");
         System.out.println("3º Por Género");
         System.out.println("4º Por calificación");
+        System.out.println("4º Las más vistas");
     }
 }

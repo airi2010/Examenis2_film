@@ -1,4 +1,4 @@
-hola:2020:Juan:pepe,marta:Acción:7:1h 30min:hola.jpg
-hola2:2019:Lucas:pepe,marta:Suspense:8:1h 40min:hola2.jpg
-hola3:2018:Oliver:pepe,marta:Miedo:5:2h 30min:hola3.jpg
-hola4:2020:Oliver2:pepe2,marta2:Miedo:8:2h 30min:hola4.jpg
+hola:2020:Juan:pepe,marta:Acción:7:1h 30min:hola.jpg:50
+hola2:2019:Lucas:pepe,marta:Suspense:8:1h 40min:hola2.jpg:80
+hola3:2018:Oliver:pepe,marta:Miedo:5:2h 30min:hola3.jpg:30
+hola4:2020:Oliver2:pepe2,marta2:Miedo:8:2h 30min:hola4.jpg:100
